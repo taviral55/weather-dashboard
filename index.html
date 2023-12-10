@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <header>weather dashboard</header>
+            <main>
+                <div class="side-container">
+                    <p class="search-title">Search for a City:</p>
+                    <input type="search" name="search-city" id="search-city-input" placeholder="Search city..." />
+                    <button class="search-btn">Search</button>
+                    <hr />
+                    <p>Search history</p>
+                    <div class="searched-cities-container"></div>
+                </div>
+                <div class="main-container">
+                    <div class="today-weather">
+                        <p class="place-name">Name</p>
+                        <p class="today-weather-temp">Temp: NaN</p>
+                        <p class="today-weather-wind">Wind: NaN</p>
+                        <p class="today-weather-humidity">Humidity: NaN</p>
+                    </div>
+                    <div class="five-days-weather-container">
+                        <p class="five-days-weather-container-title">5-Days Forcast:</p>
+                        <div class="five-days-weather-cards"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
