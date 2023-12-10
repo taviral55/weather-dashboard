@@ -7,7 +7,7 @@
 header {
     background: linear-gradient(90deg,
             rgba(2, 0, 36, 1) 0%,
-            rgba(9, 9, 121, 1) 26%,
+            rgb(155, 16, 3) 26%,
             rgba(0, 212, 255, 1) 100%);
     text-transform: capitalize;
     text-align: center;
@@ -55,7 +55,7 @@ main {
     transition: all 250ms;
 
     &:hover {
-        background-color: rgb(105, 223, 105);
+        background-color: rgb(11, 17, 186);
     }
 }
 
