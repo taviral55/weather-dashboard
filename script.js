@@ -40,7 +40,7 @@ const setFiveDaysForcast = (currentWeather) => {
             var card = document.createElement("div");
             card.classList.add("weather-forcast-card");
             forcastDate.textContent = `${item.dt_txt.split(" ")[0]}`;
-            forcastIcon.src = `http://openweathermap.org/img/w/${item.weather[0].icon}.png`;
+            forcastIcon.src = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
             const tempInFahrenheit = (item.main.temp - 273.15) * 1.8 + 32;
             forcastTemp.textContent = `Temp: ${tempInFahrenheit.toPrecision(2)} °F`;
             forcastWind.textContent = `Wind: ${item.wind.speed} MPH`;
@@ -77,7 +77,7 @@ const currentWeather = (data) => {
 
 const getGeoLocationCoordinates = async (location) => {
     const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${secretKey}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${secretKey}`
     );
     const data = await response.json();
     return data;
