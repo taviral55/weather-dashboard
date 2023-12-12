@@ -1,4 +1,4 @@
-const secretKey = "dde09423cdf3a06c9d470dfd38e6f144";
+const secretKey = "7dc6c17ace5002f60d1cf0c5e0dfec2e";
 const baseURL = `https://api.openweathermap.org/data/2.5/forecast?`;
 var searchedHistory = JSON.parse(window.localStorage.getItem("weather-cities-list")) ?? [];
 const searchedCities = ["Atlanta", "Denver", "Seattle", "San Francisco", "Orlando", "New york"];
